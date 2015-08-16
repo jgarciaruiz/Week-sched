@@ -1,0 +1,452 @@
+<!doctype html>
+<!--[if lt IE 7 ]><html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="ie ie9 ie-lt10 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. --> 
+<head>
+  <meta charset="utf-8">
+  <!-- force latest IE rendering engine & Chrome Frame -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>My Week Sched</title>
+
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- stylesheets -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/generator.css">
+  <link rel="stylesheet" href="css/table.css">
+  
+  <!-- Prefix Free && Modernizr -->
+  <script src="js/prefixfree.min.js"></script>
+  <script src="js/modernizr-2.7.1.dev.js"></script>
+
+</head>
+<body>
+
+<!-- sched form -->
+  <form action="javascipt:void(0);" method="post">
+    <div class="add-module">
+      <h1>Título</h1>
+      <input name="titulo" class="options" id="titulo" type="text" placeholder="título de la actividad...">
+      
+      <h1>Descripción</h1>
+      <input name="descripcion" class="options" id="descripcion" type="text" placeholder="descripción de la actividad...">
+      
+      <div class="half">
+        <h1>Hora comienzo</h1>
+        <input name="comienza" class="options" id="comienza" type="time" value="09:00">
+      </div>
+      <div class="half">
+        <h1>Hora finaliza</h1>
+        <input name="finaliza" class="options" id="finaliza" type="time" value="10:00">
+      </div>  
+
+      <h1>Lugar</h1>
+        <input name="lugar" class="options" id="lugar" type="text" placeholder="Dirección">
+        <h1>Día</h1>
+        <ul class="day-picker">
+          <li data-day="lunes">Lun</li><li data-day="martes">Mar</li><li data-day="miercoles">Mie</li><li data-day="jueves">Jue</li><li data-day="viernes">Vie</li>
+        </ul>
+
+      <h1>Color</h1>
+        <ul class="color-picker">
+          <li class="blue" data-color="azul"></li>
+          <li class="red" data-color="rojo"></li>
+          <li class="yellow" data-color="amarillo"></li>
+          <li class="purple" data-color="morado"></li>
+          <li class="green" data-color="verde"></li>
+          <li class="orange" data-color="naranja"></li>
+          <li class="gray" data-color="gris"></li>
+        </ul>
+        
+      <input name="color" class="options" id="color" type="hidden" value="">
+      <input name="dia" class="options" id="dia" type="hidden" value="">
+
+      <input type="submit" id="crear" value="Crear actividad">
+    </div>
+  </form>  
+<!-- sched form -->
+
+<!-- tabla -->
+<div class="sched-wr">
+  <!-- sidebar horas -->
+  <div class="sched-sidebar" style="width: 80px;">
+    <div class="sched-time">
+      <div class="sched-tvalue">8 am</div>
+      <div class="sched-tvalue">9 am</div>
+      <div class="sched-tvalue">10 am</div>
+      <div class="sched-tvalue">11 am</div>
+      <div class="sched-tvalue">12 am</div>
+      <div class="sched-tvalue">1 pm</div>
+      <div class="sched-tvalue">2 pm</div>
+      <div class="sched-tvalue">3 pm</div>
+      <div class="sched-tvalue">4 pm</div>
+      <div class="sched-tvalue">5 pm</div>
+      <div class="sched-tvalue">6 pm</div>
+      <div class="sched-tvalue">7 pm</div>
+      <div class="sched-tvalue">8 pm</div>                          
+    </div>
+  </div>
+  <!-- /sidebar horas -->
+
+  <!-- todas columnas -->
+  <div class="sched-cols" style="margin-left: 80px; margin-right: 80px;">
+
+    <!-- columna lunes -->
+    <div class="sched-colwr" data-column-dia="lunes">
+      
+      <!-- cabecera lunes -->
+      <div class="sched-colwr-header" >
+        LUNES
+      </div>
+      <!-- /cabecera  lunes -->
+
+      <!-- actividades  lunes -->
+      <div class="sched-colwr-content">
+
+        <a class="sched-activity " href="#" data-onclick="popup" data-color="#7f64b5" data-event-id="20" style="top: 0px; width:100%; height: 124px; background-color:#3498db;">
+          <div class="sched-activity-inner">
+            <div class="sched-activity-inner-bar"></div>
+            <div class="sched-activity-title">Lorem ipsum dolor</div>
+            <div class="sched-activity-subtitle">8:00 am - 10:30 am</div>
+            <div class="sched-activity-description" data-full="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac turpis non nunc molestie blandit nec et enim."></div>
+          </div>
+        </a>
+
+        <a class="sched-activity " href="#" data-onclick="popup" data-color="#7f64b5" data-event-id="20" style="top: 125px; width:100%; height: 124px; background-color:#9b59b6;">
+          <div class="sched-activity-inner">
+            <div class="sched-activity-inner-bar"></div>
+            <div class="sched-activity-title">Consectetur adipiscing</div>
+            <div class="sched-activity-subtitle">10:30 am - 1:00 pm</div>
+            <div class="sched-activity-description" data-full="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac turpis non nunc molestie blandit nec et enim."></div>
+          </div>
+        </a>
+
+        <a class="sched-activity " href="#" data-onclick="popup" data-color="#7f64b5" data-event-id="20" style="top: 250px; width:100%; height: 124px; background-color:#2ecc71;">
+          <div class="sched-activity-inner">
+            <div class="sched-activity-inner-bar"></div>
+            <div class="sched-activity-title">Vestibulum ac turpis</div>
+            <div class="sched-activity-subtitle">1:00 pm - 3:30 pm</div>
+            <div class="sched-activity-description" data-full="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac turpis non nunc molestie blandit nec et enim."></div>
+          </div>
+        </a>
+
+      </div>
+      <!-- /actividades  lunes -->
+      
+      <!-- column bg -->
+      <div class="sched-colwr-bg">
+        <div class="sched-colwr-bg-block"></div>
+        <div class="sched-colwr-bg-block"></div>
+        <div class="sched-colwr-bg-block"></div>
+        <div class="sched-colwr-bg-block"></div>
+        <div class="sched-colwr-bg-block"></div>
+        <div class="sched-colwr-bg-block"></div>
+        <div class="sched-colwr-bg-block"></div>
+        <div class="sched-colwr-bg-block"></div>
+        <div class="sched-colwr-bg-block"></div>
+        <div class="sched-colwr-bg-block"></div>
+        <div class="sched-colwr-bg-block"></div>
+        <div class="sched-colwr-bg-block"></div>
+        <div class="sched-colwr-bg-block"></div>                                        
+      </div>
+      <!-- /column bg -->
+
+    </div>
+    <!-- /columna lunes -->
+
+
+
+
+    <!-- columna martes -->
+    <div class="sched-colwr" data-column-dia="martes">
+      
+      <!-- cabecera martes -->
+      <div class="sched-colwr-header" >
+        MARTES
+      </div>
+      <!-- /cabecera  martes -->
+
+      <!-- actividades  martes -->
+      <div class="sched-colwr-content">
+
+        <a class="sched-activity " href="#" data-onclick="popup" data-color="#7f64b5" data-event-id="20" style="top: 0px; width:100%; height: 124px; background-color:#3498db;">
+          <div class="sched-activity-inner">
+            <div class="sched-activity-inner-bar"></div>
+            <div class="sched-activity-title">Lorem ipsum dolor</div>
+            <div class="sched-activity-subtitle">8:00 am - 10:30 am</div>
+            <div class="sched-activity-description" data-full="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac turpis non nunc molestie blandit nec et enim."></div>
+          </div>
+        </a>
+
+        <a class="sched-activity " href="#" data-onclick="popup" data-color="#7f64b5" data-event-id="20" style="top: 125px; width:100%; height: 124px; background-color:#9b59b6;">
+          <div class="sched-activity-inner">
+            <div class="sched-activity-inner-bar"></div>
+            <div class="sched-activity-title">Consectetur adipiscing</div>
+            <div class="sched-activity-subtitle">10:30 am - 1:00 pm</div>
+            <div class="sched-activity-description" data-full="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac turpis non nunc molestie blandit nec et enim."></div>
+          </div>
+        </a>
+
+        <a class="sched-activity " href="#" data-onclick="popup" data-color="#7f64b5" data-event-id="20" style="top: 250px; width:100%; height: 124px; background-color:#2ecc71;">
+          <div class="sched-activity-inner">
+            <div class="sched-activity-inner-bar"></div>
+            <div class="sched-activity-title">Vestibulum ac turpis</div>
+            <div class="sched-activity-subtitle">1:00 pm - 3:30 pm</div>
+            <div class="sched-activity-description" data-full="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac turpis non nunc molestie blandit nec et enim."></div>
+          </div>
+        </a>
+
+      </div>
+      <!-- /actividades  martes -->
+      
+      <!-- column bg -->
+      <div class="sched-colwr-bg">
+        <div class="sched-colwr-bg-block"></div>
+        <div class="sched-colwr-bg-block"></div>
+        <div class="sched-colwr-bg-block"></div>
+        <div class="sched-colwr-bg-block"></div>
+        <div class="sched-colwr-bg-block"></div>
+        <div class="sched-colwr-bg-block"></div>
+        <div class="sched-colwr-bg-block"></div>
+        <div class="sched-colwr-bg-block"></div>
+        <div class="sched-colwr-bg-block"></div>
+        <div class="sched-colwr-bg-block"></div>
+        <div class="sched-colwr-bg-block"></div>
+        <div class="sched-colwr-bg-block"></div>
+        <div class="sched-colwr-bg-block"></div>                                        
+      </div>
+      <!-- /column bg -->
+
+    </div>
+    <!-- /columna martes -->
+
+
+
+
+    <!-- columna miercoles -->
+    <div class="sched-colwr" data-column-dia="miercoles">
+      
+      <!-- cabecera miercoles -->
+      <div class="sched-colwr-header" >
+        MIÉRCOLES
+      </div>
+      <!-- /cabecera  miercoles -->
+
+      <!-- actividades  miercoles -->
+      <div class="sched-colwr-content">
+
+        <a class="sched-activity " href="#" data-onclick="popup" data-color="#7f64b5" data-event-id="20" style="top: 0px; width:100%; height: 124px; background-color:#3498db;">
+          <div class="sched-activity-inner">
+            <div class="sched-activity-inner-bar"></div>
+            <div class="sched-activity-title">Lorem ipsum dolor</div>
+            <div class="sched-activity-subtitle">8:00 am - 10:30 am</div>
+            <div class="sched-activity-description" data-full="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac turpis non nunc molestie blandit nec et enim."></div>
+          </div>
+        </a>
+
+        <a class="sched-activity " href="#" data-onclick="popup" data-color="#7f64b5" data-event-id="20" style="top: 125px; width:100%; height: 124px; background-color:#9b59b6;">
+          <div class="sched-activity-inner">
+            <div class="sched-activity-inner-bar"></div>
+            <div class="sched-activity-title">Consectetur adipiscing</div>
+            <div class="sched-activity-subtitle">10:30 am - 1:00 pm</div>
+            <div class="sched-activity-description" data-full="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac turpis non nunc molestie blandit nec et enim."></div>
+          </div>
+        </a>
+
+        <a class="sched-activity " href="#" data-onclick="popup" data-color="#7f64b5" data-event-id="20" style="top: 250px; width:100%; height: 124px; background-color:#2ecc71;">
+          <div class="sched-activity-inner">
+            <div class="sched-activity-inner-bar"></div>
+            <div class="sched-activity-title">Vestibulum ac turpis</div>
+            <div class="sched-activity-subtitle">1:00 pm - 3:30 pm</div>
+            <div class="sched-activity-description" data-full="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac turpis non nunc molestie blandit nec et enim."></div>
+          </div>
+        </a>
+
+      </div>
+      <!-- /actividades  miercoles -->
+      
+      <!-- column bg -->
+      <div class="sched-colwr-bg">
+        <div class="sched-colwr-bg-block"></div>
+        <div class="sched-colwr-bg-block"></div>
+        <div class="sched-colwr-bg-block"></div>
+        <div class="sched-colwr-bg-block"></div>
+        <div class="sched-colwr-bg-block"></div>
+        <div class="sched-colwr-bg-block"></div>
+        <div class="sched-colwr-bg-block"></div>
+        <div class="sched-colwr-bg-block"></div>
+        <div class="sched-colwr-bg-block"></div>
+        <div class="sched-colwr-bg-block"></div>
+        <div class="sched-colwr-bg-block"></div>
+        <div class="sched-colwr-bg-block"></div>
+        <div class="sched-colwr-bg-block"></div>                                        
+      </div>
+      <!-- /column bg -->
+
+    </div>
+    <!-- /columna miercoles -->
+
+
+
+
+    <!-- columna jueves -->
+    <div class="sched-colwr" data-column-dia="jueves">
+      
+      <!-- cabecera jueves -->
+      <div class="sched-colwr-header" >
+        JUEVES
+      </div>
+      <!-- /cabecera  jueves -->
+
+      <!-- actividades  jueves -->
+      <div class="sched-colwr-content">
+
+        <a class="sched-activity " href="#" data-onclick="popup" data-color="#7f64b5" data-event-id="20" style="top: 0px; width:100%; height: 124px; background-color:#3498db;">
+          <div class="sched-activity-inner">
+            <div class="sched-activity-inner-bar"></div>
+            <div class="sched-activity-title">Lorem ipsum dolor</div>
+            <div class="sched-activity-subtitle">8:00 am - 10:30 am</div>
+            <div class="sched-activity-description" data-full="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac turpis non nunc molestie blandit nec et enim."></div>
+          </div>
+        </a>
+
+        <a class="sched-activity " href="#" data-onclick="popup" data-color="#7f64b5" data-event-id="20" style="top: 125px; width:100%; height: 124px; background-color:#9b59b6;">
+          <div class="sched-activity-inner">
+            <div class="sched-activity-inner-bar"></div>
+            <div class="sched-activity-title">Consectetur adipiscing</div>
+            <div class="sched-activity-subtitle">10:30 am - 1:00 pm</div>
+            <div class="sched-activity-description" data-full="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac turpis non nunc molestie blandit nec et enim."></div>
+          </div>
+        </a>
+
+        <a class="sched-activity " href="#" data-onclick="popup" data-color="#7f64b5" data-event-id="20" style="top: 250px; width:100%; height: 124px; background-color:#2ecc71;">
+          <div class="sched-activity-inner">
+            <div class="sched-activity-inner-bar"></div>
+            <div class="sched-activity-title">Vestibulum ac turpis</div>
+            <div class="sched-activity-subtitle">1:00 pm - 3:30 pm</div>
+            <div class="sched-activity-description" data-full="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac turpis non nunc molestie blandit nec et enim."></div>
+          </div>
+        </a>
+
+      </div>
+      <!-- /actividades  jueves -->
+      
+      <!-- column bg -->
+      <div class="sched-colwr-bg">
+        <div class="sched-colwr-bg-block"></div>
+        <div class="sched-colwr-bg-block"></div>
+        <div class="sched-colwr-bg-block"></div>
+        <div class="sched-colwr-bg-block"></div>
+        <div class="sched-colwr-bg-block"></div>
+        <div class="sched-colwr-bg-block"></div>
+        <div class="sched-colwr-bg-block"></div>
+        <div class="sched-colwr-bg-block"></div>
+        <div class="sched-colwr-bg-block"></div>
+        <div class="sched-colwr-bg-block"></div>
+        <div class="sched-colwr-bg-block"></div>
+        <div class="sched-colwr-bg-block"></div>
+        <div class="sched-colwr-bg-block"></div>                                        
+      </div>
+      <!-- /column bg -->
+
+    </div>
+    <!-- /columna jueves -->
+
+
+
+
+    <!-- columna viernes -->
+    <div class="sched-colwr" data-column-dia="viernes">
+      
+      <!-- cabecera viernes -->
+      <div class="sched-colwr-header" >
+        VIERNES
+      </div>
+      <!-- /cabecera  viernes -->
+
+      <!-- actividades  viernes -->
+      <div class="sched-colwr-content">
+
+        <a class="sched-activity " href="#" data-onclick="popup" data-color="#7f64b5" data-event-id="20" style="top: 0px; width:100%; height: 124px; background-color:#3498db;">
+          <div class="sched-activity-inner">
+            <div class="sched-activity-inner-bar"></div>
+            <div class="sched-activity-title">Lorem ipsum dolor</div>
+            <div class="sched-activity-subtitle">8:00 am - 10:30 am</div>
+            <div class="sched-activity-description" data-full="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac turpis non nunc molestie blandit nec et enim."></div>
+          </div>
+        </a>
+
+        <a class="sched-activity " href="#" data-onclick="popup" data-color="#7f64b5" data-event-id="20" style="top: 125px; width:100%; height: 124px; background-color:#9b59b6;">
+          <div class="sched-activity-inner">
+            <div class="sched-activity-inner-bar"></div>
+            <div class="sched-activity-title">Consectetur adipiscing</div>
+            <div class="sched-activity-subtitle">10:30 am - 1:00 pm</div>
+            <div class="sched-activity-description" data-full="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac turpis non nunc molestie blandit nec et enim."></div>
+          </div>
+        </a>
+
+        <a class="sched-activity " href="#" data-onclick="popup" data-color="#7f64b5" data-event-id="20" style="top: 250px; width:100%; height: 124px; background-color:#2ecc71;">
+          <div class="sched-activity-inner">
+            <div class="sched-activity-inner-bar"></div>
+            <div class="sched-activity-title">Vestibulum ac turpis</div>
+            <div class="sched-activity-subtitle">1:00 pm - 3:30 pm</div>
+            <div class="sched-activity-description" data-full="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac turpis non nunc molestie blandit nec et enim."></div>
+          </div>
+        </a>
+
+      </div>
+      <!-- /actividades  viernes -->
+      
+      <!-- column bg -->
+      <div class="sched-colwr-bg">
+        <div class="sched-colwr-bg-block"></div>
+        <div class="sched-colwr-bg-block"></div>
+        <div class="sched-colwr-bg-block"></div>
+        <div class="sched-colwr-bg-block"></div>
+        <div class="sched-colwr-bg-block"></div>
+        <div class="sched-colwr-bg-block"></div>
+        <div class="sched-colwr-bg-block"></div>
+        <div class="sched-colwr-bg-block"></div>
+        <div class="sched-colwr-bg-block"></div>
+        <div class="sched-colwr-bg-block"></div>
+        <div class="sched-colwr-bg-block"></div>
+        <div class="sched-colwr-bg-block"></div>
+        <div class="sched-colwr-bg-block"></div>                                        
+      </div>
+      <!-- /column bg -->
+
+    </div>
+    <!-- /columna viernes -->
+
+
+
+  </div>
+  <!-- /todas columnas -->
+
+</div>
+<!-- /tabla -->
+
+<div id="jsonresp" class="code"></div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/main.js"></script>
+
+<!-- GA code 
+<script>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-XXXXXX-XX']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+-->
+</body>
+</html>
