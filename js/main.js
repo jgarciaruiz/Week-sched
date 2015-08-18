@@ -26,6 +26,13 @@
     $('form').submit(function (e) {
         e.preventDefault();
 
+        //timediff
+        var comienza = $('#comienza').val(),
+            finaliza = $('#finaliza').val();
+        timediff(comienza,finaliza);            
+
+
+
         var data = $(this).serializeFormJSON();
         console.log(data);
         $('#jsonresp').html($.param(data));
@@ -49,14 +56,226 @@
 
             //switch time: position & height of the appointment
             switch($('#comienza').val()) {
-                case "15:30":
-                    $("."+timestamp).css({
-                        "top":"375px",
-                        "height": "124px",
+                case "08:00":
+                    var rowposition = 0, //see if in a future version i can get the row position via loop
+                        pxhour = 50,//1h in the sched table = 50px height
+                        pxsinglemin = pxhour/60,
+                        timemin = $('#timediff-m').val();//traerlo de una variav
+
+                    var timeposition = rowposition*pxhour+timemin*pxsinglemin;
+                    var cellheight = $('#timediff-h').val()*pxhour+($('#timediff-m').val()*pxsinglemin);
+                   $("."+timestamp).css({
+                        "top":timeposition,
+                        "height": cellheight,
                         "width": "100%",
                         "background-color":$('.color-selected').data('color')
                     });
-                    break;                
+                    break;
+
+
+                case "09:00":
+                    var rowposition = 1,
+                        pxhour = 50,//1h in the sched table = 50px height
+                        pxsinglemin = pxhour/60,
+                        timemin = $('#timediff-m').val();
+
+                    var timeposition = rowposition*pxhour+timemin*pxsinglemin;
+                    var cellheight = $('#timediff-h').val()*pxhour+($('#timediff-m').val()*pxsinglemin);
+                   $("."+timestamp).css({
+                        "top":timeposition,
+                        "height": cellheight,
+                        "width": "100%",
+                        "background-color":$('.color-selected').data('color')
+                    });
+                    break;
+
+
+                case "10:00":
+                    var rowposition = 2,
+                        pxhour = 50,//1h in the sched table = 50px height
+                        pxsinglemin = pxhour/60,
+                        timemin = $('#timediff-m').val(); 
+
+                    var timeposition = rowposition*pxhour+timemin*pxsinglemin;
+                    var cellheight = $('#timediff-h').val()*pxhour+($('#timediff-m').val()*pxsinglemin);
+                   $("."+timestamp).css({
+                        "top":timeposition,
+                        "height": cellheight,
+                        "width": "100%",
+                        "background-color":$('.color-selected').data('color')
+                    });
+                    break;
+              
+
+                case "11:00":
+                    var rowposition = 3,
+                        pxhour = 50,//1h in the sched table = 50px height
+                        pxsinglemin = pxhour/60,
+                        timemin = $('#timediff-m').val();
+
+                    var timeposition = rowposition*pxhour+timemin*pxsinglemin;
+                    var cellheight = $('#timediff-h').val()*pxhour+($('#timediff-m').val()*pxsinglemin);
+                   $("."+timestamp).css({
+                        "top":timeposition,
+                        "height": cellheight,
+                        "width": "100%",
+                        "background-color":$('.color-selected').data('color')
+                    });
+                    break;
+
+
+                case "12:00":
+                    var rowposition = 4,
+                        pxhour = 50,//1h in the sched table = 50px height
+                        pxsinglemin = pxhour/60,
+                        timemin = $('#timediff-m').val();
+
+                    var timeposition = rowposition*pxhour+timemin*pxsinglemin;
+                    var cellheight = $('#timediff-h').val()*pxhour+($('#timediff-m').val()*pxsinglemin);
+                   $("."+timestamp).css({
+                        "top":timeposition,
+                        "height": cellheight,
+                        "width": "100%",
+                        "background-color":$('.color-selected').data('color')
+                    });
+                    break;
+
+
+                case "13:00":
+                    var rowposition = 5,
+                        pxhour = 50,//1h in the sched table = 50px height
+                        pxsinglemin = pxhour/60,
+                        timemin = $('#timediff-m').val();
+
+                    var timeposition = rowposition*pxhour+timemin*pxsinglemin;
+                    var cellheight = $('#timediff-h').val()*pxhour+($('#timediff-m').val()*pxsinglemin);
+                   $("."+timestamp).css({
+                        "top":timeposition,
+                        "height": cellheight,
+                        "width": "100%",
+                        "background-color":$('.color-selected').data('color')
+                    });
+                    break;
+
+
+                case "14:00":
+                    var rowposition = 6,
+                        pxhour = 50,//1h in the sched table = 50px height
+                        pxsinglemin = pxhour/60,
+                        timemin = $('#timediff-m').val();
+
+                    var timeposition = rowposition*pxhour+timemin*pxsinglemin;
+                    var cellheight = $('#timediff-h').val()*pxhour+($('#timediff-m').val()*pxsinglemin);
+                   $("."+timestamp).css({
+                        "top":timeposition,
+                        "height": cellheight,
+                        "width": "100%",
+                        "background-color":$('.color-selected').data('color')
+                    });
+                    break;
+
+
+                case "15:00":
+                    var rowposition = 7,
+                        pxhour = 50,//1h in the sched table = 50px height
+                        pxsinglemin = pxhour/60,
+                        timemin = $('#timediff-m').val();
+
+                    var timeposition = rowposition*pxhour+timemin*pxsinglemin;
+                    var cellheight = $('#timediff-h').val()*pxhour+($('#timediff-m').val()*pxsinglemin);
+                   $("."+timestamp).css({
+                        "top":timeposition,
+                        "height": cellheight,
+                        "width": "100%",
+                        "background-color":$('.color-selected').data('color')
+                    });
+                    break;
+
+
+                case "16:00":
+                    var rowposition = 8,
+                        pxhour = 50,//1h in the sched table = 50px height
+                        pxsinglemin = pxhour/60,
+                        timemin = $('#timediff-m').val();
+
+                    var timeposition = rowposition*pxhour+timemin*pxsinglemin;
+                    var cellheight = $('#timediff-h').val()*pxhour+($('#timediff-m').val()*pxsinglemin);
+                   $("."+timestamp).css({
+                        "top":timeposition,
+                        "height": cellheight,
+                        "width": "100%",
+                        "background-color":$('.color-selected').data('color')
+                    });
+                    break;
+
+
+                case "17:00":
+                    var rowposition = 9,
+                        pxhour = 50,//1h in the sched table = 50px height
+                        pxsinglemin = pxhour/60,
+                        timemin = $('#timediff-m').val();
+
+                    var timeposition = rowposition*pxhour+timemin*pxsinglemin;
+                    var cellheight = $('#timediff-h').val()*pxhour+($('#timediff-m').val()*pxsinglemin);
+                   $("."+timestamp).css({
+                        "top":timeposition,
+                        "height": cellheight,
+                        "width": "100%",
+                        "background-color":$('.color-selected').data('color')
+                    });
+                    break;
+
+
+                case "18:00":
+                    var rowposition = 10,
+                        pxhour = 50,//1h in the sched table = 50px height
+                        pxsinglemin = pxhour/60,
+                        timemin = $('#timediff-m').val();
+
+                    var timeposition = rowposition*pxhour+timemin*pxsinglemin;
+                    var cellheight = $('#timediff-h').val()*pxhour+($('#timediff-m').val()*pxsinglemin);
+                   $("."+timestamp).css({
+                        "top":timeposition,
+                        "height": cellheight,
+                        "width": "100%",
+                        "background-color":$('.color-selected').data('color')
+                    });
+                    break;
+
+
+                case "19:00":
+                    var rowposition = 11,
+                        pxhour = 50,//1h in the sched table = 50px height
+                        pxsinglemin = pxhour/60,
+                        timemin = $('#timediff-m').val();
+
+                    var timeposition = rowposition*pxhour+timemin*pxsinglemin;
+                    var cellheight = $('#timediff-h').val()*pxhour+($('#timediff-m').val()*pxsinglemin);
+                   $("."+timestamp).css({
+                        "top":timeposition,
+                        "height": cellheight,
+                        "width": "100%",
+                        "background-color":$('.color-selected').data('color')
+                    });
+                    break;
+
+
+                case "20:00":
+                    var rowposition = 12,
+                        pxhour = 50,//1h in the sched table = 50px height
+                        pxsinglemin = pxhour/60,
+                        timemin = $('#timediff-m').val();
+
+                    var timeposition = rowposition*pxhour+timemin*pxsinglemin;
+                    var cellheight = $('#timediff-h').val()*pxhour+($('#timediff-m').val()*pxsinglemin);
+                   $("."+timestamp).css({
+                        "top":timeposition,
+                        "height": cellheight,
+                        "width": "100%",
+                        "background-color":$('.color-selected').data('color')
+                    });
+                    break;
+
             }
 
 
@@ -84,4 +303,19 @@
     };
 })(jQuery);
 
-
+function timediff(inicio,fin){
+    var starts = $('#comienza').val(),
+        ends = $('#finaliza').val(),    
+        hours = ends.split(':')[0] - starts.split(':')[0],
+        minutes = ends.split(':')[1] - ends.split(':')[1];
+    
+    minutes = minutes.toString().length<2?'0'+minutes:minutes;
+    if(minutes<0){ 
+        hours--;
+        minutes = 60 + minutes;
+    }
+    hours = hours.toString().length<2?'0'+hours:hours;
+    $('#timediff-h').val(hours);//*60 because i need mins
+    $('#timediff-m').val(minutes);
+    $('#timediff-inmins').val(hours*60+minutes);    
+}
