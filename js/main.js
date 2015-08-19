@@ -52,6 +52,59 @@
                     +"</a>";
                     $(item).appendTo(coldia);
                     break;
+
+                case "martes":
+                    coldia = $('.sched-cols').find("[data-column-dia='martes'] .sched-colwr-content");
+                    item = "<a class='sched-activity cita-martes "+timestamp+"' href='javascript:void(0)' data-onclick='popup' data-event-id='"+timestamp+"'>"
+                        +"<div class='sched-activity-inner'>"
+                            +"<div class='sched-activity-inner-bar'></div>"
+                            +"<div class='sched-activity-title'>"+$('#titulo').val()+"</div>"
+                            +"<div class='sched-activity-subtitle'>"+$('#comienza').val()+"-"+$('#finaliza').val()+"</div>"
+                            +"<div class='sched-activity-description' data-full='"+$('#descripcion').val()+"'></div>"
+                        +"</div>"
+                    +"</a>";
+                    $(item).appendTo(coldia);
+                    break;
+
+                case "miercoles":
+                    coldia = $('.sched-cols').find("[data-column-dia='miercoles'] .sched-colwr-content");
+                    item = "<a class='sched-activity cita-miercoles "+timestamp+"' href='javascript:void(0)' data-onclick='popup' data-event-id='"+timestamp+"'>"
+                        +"<div class='sched-activity-inner'>"
+                            +"<div class='sched-activity-inner-bar'></div>"
+                            +"<div class='sched-activity-title'>"+$('#titulo').val()+"</div>"
+                            +"<div class='sched-activity-subtitle'>"+$('#comienza').val()+"-"+$('#finaliza').val()+"</div>"
+                            +"<div class='sched-activity-description' data-full='"+$('#descripcion').val()+"'></div>"
+                        +"</div>"
+                    +"</a>";
+                    $(item).appendTo(coldia);
+                    break;
+
+                case "jueves":
+                    coldia = $('.sched-cols').find("[data-column-dia='jueves'] .sched-colwr-content");
+                    item = "<a class='sched-activity cita-jueves "+timestamp+"' href='javascript:void(0)' data-onclick='popup' data-event-id='"+timestamp+"'>"
+                        +"<div class='sched-activity-inner'>"
+                            +"<div class='sched-activity-inner-bar'></div>"
+                            +"<div class='sched-activity-title'>"+$('#titulo').val()+"</div>"
+                            +"<div class='sched-activity-subtitle'>"+$('#comienza').val()+"-"+$('#finaliza').val()+"</div>"
+                            +"<div class='sched-activity-description' data-full='"+$('#descripcion').val()+"'></div>"
+                        +"</div>"
+                    +"</a>";
+                    $(item).appendTo(coldia);
+                    break;
+                    
+                case "viernes":
+                    coldia = $('.sched-cols').find("[data-column-dia='viernes'] .sched-colwr-content");
+                    item = "<a class='sched-activity cita-viernes "+timestamp+"' href='javascript:void(0)' data-onclick='popup' data-event-id='"+timestamp+"'>"
+                        +"<div class='sched-activity-inner'>"
+                            +"<div class='sched-activity-inner-bar'></div>"
+                            +"<div class='sched-activity-title'>"+$('#titulo').val()+"</div>"
+                            +"<div class='sched-activity-subtitle'>"+$('#comienza').val()+"-"+$('#finaliza').val()+"</div>"
+                            +"<div class='sched-activity-description' data-full='"+$('#descripcion').val()+"'></div>"
+                        +"</div>"
+                    +"</a>";
+                    $(item).appendTo(coldia);
+                    break;                                     
+
             }
 
             //switch time: position & height of the appointment
