@@ -4,7 +4,8 @@
     //$("body").append('<div class="sched-popup-overlay"></div><div class="sched-popup"><a href="#" class="sched-popup-close"><i class="sched-icon sched-icon-times"></i></a><div class="sched-popup-media"></div><div class="sched-popup-title">Demo Actividad</div><div class="sched-popup-description"></div></div>');
     //$("body").append('<div class="sched-popup-overlay"></div><!-- popup sched wr --><div class="sched-popup sched-popup-has-image" id="sched-schedule-7-295205655-popup" style="left: 119.28125px; top: 720.78125px; display: none;"><!-- close button --><a href="#" class="sched-popup-close" style="color: rgb(255, 255, 255);"><i class="sched-icon sched-icon-times"></i></a><!-- /close button --><!-- picture --><div class="sched-popup-media" data-media-type="image"><img src="https://unsplash.imgix.net/photo-1420819453217-57b6badd9e19?fit=crop&amp;fm=jpg&amp;h=700&amp;q=75&amp;w=1050"></div><!-- /picture --><!-- title --><div class="sched-popup-title"><div>DJ Primary Attack</div></div><!-- /title --><!-- long description --><div class="sched-popup-description"><!-- head img --><div class="sched-event-image-load"><img src="https://unsplash.imgix.net/photo-1420819453217-57b6badd9e19?fit=crop&amp;fm=jpg&amp;h=700&amp;q=75&amp;w=1050"></div><!-- /head img --><!-- quick details --><div class="sched-meta"><div class="sched-meta-field"><div class="sched-meta-icon"><i class="sched-icon sched-icon-clock-o"></i></div><div class="sched-meta-right"><div class="sched-meta-name">Time On Stage</div><div class="sched-meta-value">1:00 pm - 3:30 pm</div></div></div><div class="sched-meta-field"><div class="sched-meta-icon"><i class="sched-icon sched-icon-map-marker"></i></div><div class="sched-meta-right"><div class="sched-meta-name">Location</div><div class="sched-meta-value">Mainstage I</div></div></div></div><!-- /quick details --><!-- text --><p class="sched-popup-description-text">Nullam ultrices blandit mauris, ut blandit felis facilisis sit amet. Nullam vel elementum sem. Nam porta velit at neque maximus porttitor. Suspendisse convallis nulla id nibh suscipit venenatis. Pellentesque eu neque ac orci vulputate fringilla. Suspendisse velit ante, convallis sed nulla ut, suscipit tristique erat. Donec dolor nisl, maximus ut velit nec, aliquet hendrerit tortor.</p><!-- text --></div><!-- /long description --></div><!-- popup sched wr -->');
 
-    $("body").append('<div class="sched-popup-overlay"></div><!-- popup sched wr --><div class="sched-popup sched-popup-has-image" id="sched-schedule-7-295205655-popup" style="left: 119.28125px; top: 720.78125px; display: none;"><!-- close button --><a href="#" class="sched-popup-close" style="color: rgb(255, 255, 255);"><i class="sched-icon sched-icon-times"></i></a><!-- /close button --><!-- picture --><div class="sched-popup-media" data-media-type="image"><img src="https://unsplash.imgix.net/photo-1420819453217-57b6badd9e19?fit=crop&amp;fm=jpg&amp;h=700&amp;q=75&amp;w=1050"></div><!-- /picture --><!-- title --><div class="sched-popup-title"><div>DJ Primary Attack</div></div><!-- /title --><!-- long description --><div class="sched-popup-description"><!-- head img <div class="sched-event-image-load"><img src="https://unsplash.imgix.net/photo-1420819453217-57b6badd9e19?fit=crop&amp;fm=jpg&amp;h=700&amp;q=75&amp;w=1050"></div> /head img --><!-- quick details --><div class="sched-meta"><div class="sched-meta-field"><div class="sched-meta-icon"><i class="sched-icon sched-icon-clock-o"></i></div><div class="sched-meta-right"><div class="sched-meta-name">Time On Stage</div><div class="sched-meta-value">1:00 pm - 3:30 pm</div></div></div><div class="sched-meta-field"><div class="sched-meta-icon"><i class="sched-icon sched-icon-map-marker"></i></div><div class="sched-meta-right"><div class="sched-meta-name">Location</div><div class="sched-meta-value">Mainstage I</div></div></div></div><!-- /quick details --><!-- text --><p class="sched-popup-description-text">Nullam ultrices blandit mauris, ut blandit felis facilisis sit amet. Nullam vel elementum sem. Nam porta velit at neque maximus porttitor. Suspendisse convallis nulla id nibh suscipit venenatis. Pellentesque eu neque ac orci vulputate fringilla. Suspendisse velit ante, convallis sed nulla ut, suscipit tristique erat. Donec dolor nisl, maximus ut velit nec, aliquet hendrerit tortor.</p><!-- text --></div><!-- /long description --></div><!-- popup sched wr -->');
+
+    $("body").append('<div class="sched-popup-overlay"></div><!-- popup sched wr --><div class="sched-popup sched-popup-has-image" id="sched-schedule-7-295205655-popup" style="left: 119.28125px; top: 720.78125px; display: none;"><!-- close button --><a href="#" class="sched-popup-close" style="color: rgb(255, 255, 255);"><i class="sched-icon sched-icon-times"></i></a><!-- /close button --><!-- picture --><div class="sched-popup-media" data-media-type="image"><img src="uploads/ny_demo.jpg"></div><!-- /picture --><!-- title --><div class="sched-popup-title"><div>DJ Primary Attack</div></div><!-- /title --><!-- long description --><div class="sched-popup-description"><!-- head img <div class="sched-event-image-load"><img src="https://unsplash.imgix.net/photo-1420819453217-57b6badd9e19?fit=crop&amp;fm=jpg&amp;h=700&amp;q=75&amp;w=1050"></div> /head img --><!-- quick details --><div class="sched-meta"><div class="sched-meta-field"><div class="sched-meta-icon"><i class="sched-icon sched-icon-clock-o"></i></div><div class="sched-meta-right"><div class="sched-meta-name">Time On Stage</div><div class="sched-meta-value">1:00 pm - 3:30 pm</div></div></div><div class="sched-meta-field"><div class="sched-meta-icon"><i class="sched-icon sched-icon-map-marker"></i></div><div class="sched-meta-right"><div class="sched-meta-name">Location</div><div class="sched-meta-value">Mainstage I</div></div></div></div><!-- /quick details --><!-- text --><p class="sched-popup-description-text">Nullam ultrices blandit mauris, ut blandit felis facilisis sit amet. Nullam vel elementum sem. Nam porta velit at neque maximus porttitor. Suspendisse convallis nulla id nibh suscipit venenatis. Pellentesque eu neque ac orci vulputate fringilla. Suspendisse velit ante, convallis sed nulla ut, suscipit tristique erat. Donec dolor nisl, maximus ut velit nec, aliquet hendrerit tortor.</p><!-- text --></div><!-- /long description --></div><!-- popup sched wr -->');
 
     //single sched event click
     var overlay = $(".sched-popup-overlay");
@@ -30,12 +31,13 @@
 
         the_event.hide();//tambien dentro del bloque nuevo de código
 
+        console.log("clicked_eventid: "+clicked_eventid)
+        console.log("the_event: "+the_event);
         console.log("position: "+position);
         console.log("popup_width: "+popup_width);
-        console.log("event_id: "+position);
+        console.log("event_id: "+event_id);
         console.log("event_description: "+event_description);
         console.log("event_inner: "+event_inner);
-
 
         show_overlay();//tambien dentro del bloque nuevo de código
 
@@ -55,8 +57,15 @@
 
         popup.find('.sched-popup-close').css('color', event_inner.css('color'))
 
-        var popup_title_div = popup.find('.sched-popup-title div');
-      
+
+
+        //add dynamic content to sched opened item
+        var this_title = $(this).data('title');
+
+        popup.find('.sched-popup-title > div').html(this_title);
+
+
+     
         popup.find('.sched-popup-edit-event').click(function(e) {
             e.preventDefault();
             sched_open_event_editor(the_event.attr('data-event-id'));
