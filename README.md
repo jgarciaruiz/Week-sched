@@ -1,3 +1,3 @@
-# Week Sched
-Under development.
-Demo link: 
+# Week Sched builder
+Project under development.
+Demo link: http://jgarciaruiz.es/weblab/week-sched/
